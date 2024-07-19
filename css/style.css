@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -31,16 +32,17 @@ header {
     z-index: 99;
 }
 
-#sobre {
-    background-color: dimgray;
-}
-
 .logo {
     height: 15px;
 }
 
 .carousel-item img {
     margin-top: -200px;
+}
+
+#carrossel {
+    z-index: 1;
+    max-height: 500px;
 }
 
 .navigation a {
@@ -107,13 +109,6 @@ header {
     width: 15rem;
     align-self: center;
     padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-.veiculos_text {
-    padding: 20px 140px;
-    margin-top: 3.5rem;
-    gap: 30px;
 }
 
 .veiculos_galeria {
@@ -123,14 +118,90 @@ header {
     margin-bottom: 50px;
 }
 
+.sobre {
+    /* padding: 10px 0px; */
+}
+
+.sobre_image {
+    background: url(../images/Veiculos-Model-3.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+}
+
 .sobre_text {
     display: flex;
-    padding: 20px 140px;
+    background-color: rgb(236, 234, 234);
+    padding: 60px 140px;
     gap: 40px;
     text-align: justify;
 }
 
-#carrossel {
-    z-index: 1;
-    max-height: 500px;
+.contato_endereco {
+    display: flex;
+    padding: 30px 140px;
+    gap: 40px;
+}
+
+.contato_form {
+    display: flex;
+    /* padding: 30px 140px; */
+    gap: 40px;
+    align-content: baseline;
+}
+
+.contato_campo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.contato_maps {
+    padding: 40px 140px;
+}
+
+.contato_media {
+    padding: 40px 0px;
+}
+
+.titulo_text {
+    text-align: center;
+    padding: 20px 140px;
+    margin-top: 60px;
+}
+
+/* mídias sociais */
+.fa {
+    padding: 15px;
+    font-size: 16px;
+    /* width: 50px; */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 35px;
+    margin: 5px 2px;
+    display: inline;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.fa-facebook {
+    background: #242424;
+    color: white;
+}
+
+.fa-twitter {
+    background: #242424;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #242424;
+    color: white;
+}
+
+.fa-instagram {
+    background: #242424;
+    color: white;
 }

@@ -7,6 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/tesla-simbolo.svg.png" type="image/x-icon">
 
@@ -22,12 +23,14 @@
         <nav class="navigation">
             <a href="#">Home</a>
             <a href="#veiculos">Veículos</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
 
+    <!-- Home -->
     <section id="home">
+
         <!-- Carrossel -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" id="carrossel">
@@ -54,6 +57,7 @@
                 <span class="visually-hidden">Next</span>
             </button> -->
         </div>
+
         <!-- Box -->
         <div class="home_box">
             <div class="home_text">
@@ -65,90 +69,175 @@
                 <!-- <img src="images/tesla-modely-large.png" class="home_image" alt="Tesla Modely"> -->
             </div>
         </div>
+
     </section>
 
+    <!-- Veículos -->
     <section id="veiculos">
-        <!-- Veículos -->
-        <div class="veiculos_text">
-            <h1>Nossos veículos</h1>
-        </div>
-        <div class="veiculos_galeria">
-            <div class="card" style="width: 18rem;">
-                <img src="images/Mega-Menu-Vehicles-Cybertruck-1x.avif" class="card-img-top home_image" alt="Tesla">
-                <div class="card-body">
-                    <h3 class="card-title">Cybertruck</h3>
-                    <p class="card-text">Mergulhe em uma cabine espaçosa e moderna, recheada de recursos de tecnologia
-                        avançada e entretenimento.</p>
-                    <a href="#" class="btn btn-dark">Saiba mais</a>
-                </div>
+        <div class="veiculos">
+            <!-- Título -->
+            <div class="titulo_text">
+                <h1>Nossos veículos</h1>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/Mega-Menu-Vehicles-Model-3-Performance-LHD.avif" class="card-img-top home_image"
-                    alt="Tesla">
-                <div class="card-body">
-                    <h3 class="card-title">Model 3</h3>
-                    <p class="card-text">O piloto automático permite que seu carro dirija, acelere e freie
-                        automaticamente,
-                        auxiliando nas partes mais pesadas da direção.</p>
-                    <a href="#" class="btn btn-dark">Saiba mais</a>
+            <!-- Galeria -->
+            <div class="veiculos_galeria">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Mega-Menu-Vehicles-Cybertruck-1x.avif" class="card-img-top home_image" alt="Tesla">
+                    <div class="card-body">
+                        <h3 class="card-title">Cybertruck</h3>
+                        <p class="card-text">Mergulhe em uma cabine espaçosa e moderna, recheada de recursos de
+                            tecnologia
+                            avançada e entretenimento.</p>
+                        <a href="#" class="btn btn-dark">Saiba mais</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/Mega-Menu-Vehicles-Model-S.avif" class="card-img-top home_image" alt="Tesla">
-                <div class="card-body">
-                    <h3 class="card-title">Model S</h3>
-                    <p class="card-text">O Model S tem a aceleração mais rápida de qualquer veículo, com bateria que
-                        permite
-                        corridas sem degradação do desempenho.</p>
-                    <a href="#" class="btn btn-dark">Saiba mais</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Mega-Menu-Vehicles-Model-3-Performance-LHD.avif" class="card-img-top home_image"
+                        alt="Tesla">
+                    <div class="card-body">
+                        <h3 class="card-title">Model 3</h3>
+                        <p class="card-text">O piloto automático permite que seu carro dirija, acelere e freie
+                            automaticamente,
+                            auxiliando nas partes mais pesadas da direção.</p>
+                        <a href="#" class="btn btn-dark">Saiba mais</a>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="images/Mega-Menu-Vehicles-Model-Y.avif" class="card-img-top home_image" alt="Tesla">
-                <div class="card-body">
-                    <h3 class="card-title">Model Y</h3>
-                    <p class="card-text">Com até 320 milhas de alcance com uma única carga, é provável que você precise
-                        de
-                        uma pausa antes do seu Modelo Y.</p>
-                    <a href="#" class="btn btn-dark">Saiba mais</a>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Mega-Menu-Vehicles-Model-S.avif" class="card-img-top home_image" alt="Tesla">
+                    <div class="card-body">
+                        <h3 class="card-title">Model S</h3>
+                        <p class="card-text">O Model S tem a aceleração mais rápida de qualquer veículo, com bateria que
+                            permite
+                            corridas sem degradação do desempenho.</p>
+                        <a href="#" class="btn btn-dark">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="images/Mega-Menu-Vehicles-Model-Y.avif" class="card-img-top home_image" alt="Tesla">
+                    <div class="card-body">
+                        <h3 class="card-title">Model Y</h3>
+                        <p class="card-text">Com até 320 milhas de alcance com uma única carga, é provável que você
+                            precise
+                            de
+                            uma pausa antes do seu Modelo Y.</p>
+                        <a href="#" class="btn btn-dark">Saiba mais</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Sobre -->
     <section id="sobre">
-        <div class="veiculos_text">
-            <h1>Sobre nós</h1>
-        </div>
-        <div class="sobre_text">
-            <div>
-                Bem-vindo à Concessionária Tesla, onde o futuro da mobilidade se encontra com a excelência automotiva. <br />
-                <br />
-                Na nossa concessionária, estamos orgulhosos de oferecer a você a experiência única de dirigir um Tesla,
-                uma verdadeira revolução na indústria automotiva. Os carros Tesla não são apenas veículos elétricos; são
-                inovações que combinam tecnologia avançada, design sofisticado e desempenho excepcional.<br />
-                <br />
-                Imagine-se ao volante do Tesla Model S, um sedã elétrico que redefine luxo e performance, ou explorando
-                novos horizontes com o Tesla Model X, um SUV que combina espaço, conforto e potência de forma
-                incomparável. Para quem busca versatilidade sem abrir mão da sustentabilidade, o Tesla Model 3 oferece
-                design elegante e autonomia impressionante, ideal para o seu dia a dia na cidade ou em viagens longas.
+        <div class="sobre">
+            <!-- Título -->
+            <div class="titulo_text">
+                <h1>Sobre nós</h1>
             </div>
-            <div>
-                Além dos modelos de carros, na nossa concessionária você encontrará um ambiente dedicado ao futuro da
-                mobilidade, onde cada detalhe foi pensado para proporcionar uma experiência de compra única e
-                personalizada. Nossos consultores especializados estão à disposição para apresentar todas as
-                funcionalidades e vantagens de possuir um Tesla, incluindo a rede de superchargers que permite uma carga
-                rápida e conveniente em todo o país.<br />
-                <br />
-                Na Concessionária Tesla, não vendemos apenas carros; oferecemos uma visão de um futuro mais sustentável
-                e tecnologicamente avançado. Visite-nos hoje mesmo e descubra por que dirigir um Tesla é mais do que uma
-                escolha de transporte – é uma afirmação de estilo de vida moderno e consciente.<br />
-                <br />
-                Junte-se à revolução elétrica. Junte-se à Tesla.
+            <div class="sobre_image"></div>
+            <!-- Texto -->
+            <div class="sobre_text">
+                <div>
+                    Bem-vindo à Concessionária Tesla, onde o futuro da mobilidade se encontra com a excelência
+                    automotiva. <br />
+                    <br />
+                    Na nossa concessionária, estamos orgulhosos de oferecer a você a experiência única de dirigir um
+                    Tesla,
+                    uma verdadeira revolução na indústria automotiva. Os carros Tesla não são apenas veículos elétricos;
+                    são
+                    inovações que combinam tecnologia avançada, design sofisticado e desempenho excepcional.<br />
+                    <br />
+                    Imagine-se ao volante do Tesla Model S, um sedã elétrico que redefine luxo e performance, ou
+                    explorando
+                    novos horizontes com o Tesla Model X, um SUV que combina espaço, conforto e potência de forma
+                    incomparável. Para quem busca versatilidade sem abrir mão da sustentabilidade, o Tesla Model 3
+                    oferece
+                    design elegante e autonomia impressionante, ideal para o seu dia a dia na cidade ou em viagens
+                    longas.
+                </div>
+                <div>
+                    Além dos modelos de carros, na nossa concessionária você encontrará um ambiente dedicado ao futuro
+                    da
+                    mobilidade, onde cada detalhe foi pensado para proporcionar uma experiência de compra única e
+                    personalizada. Nossos consultores especializados estão à disposição para apresentar todas as
+                    funcionalidades e vantagens de possuir um Tesla, incluindo a rede de superchargers que permite uma
+                    carga
+                    rápida e conveniente em todo o país.<br />
+                    <br />
+                    Na Concessionária Tesla, não vendemos apenas carros; oferecemos uma visão de um futuro mais
+                    sustentável
+                    e tecnologicamente avançado. Visite-nos hoje mesmo e descubra por que dirigir um Tesla é mais do que
+                    uma
+                    escolha de transporte – é uma afirmação de estilo de vida moderno e consciente.<br />
+                    <br />
+                    Junte-se à revolução elétrica. Junte-se à Tesla.
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Contato -->
+    <section id="contato">
+        <div>
+            <!-- Título -->
+            <div class="titulo_text">
+                <h1>Contato</h1>
+            </div>
+            <!-- Maps -->
+            <div class="contato_maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15925.41808631913!2d-38.5104072!3d-3.7326781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74991204f2b1d%3A0x38e3b25bd5d38768!2sDigital%20College%20Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1721406016641!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Endereço e Form -->
+            <div class="contato_endereco">
+                <form action="">
+                    <div class="contato_form">
+                        <div>
+                            <div class="contato_campo">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="contato_campo">
+                                <label for="nome">E-mail</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu e-mail">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="contato_campo">
+                                <label for="nome">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                            </div>
+                        </div>
+                        <div class="contato_enviar">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <!-- Endereço -->
+                    <div class="contato_text">
+                        <h4>Digital College Fortaleza</h4>
+                        Av. Santos Dumont, 1510 - 1º andar <br>
+                        Aldeota, Fortaleza <br>
+                        (85) 99972.1749 - 99753.0095 <br>
+                    </div>
+                    <!-- Midias sociais -->
+                    <div class="contato_media">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
